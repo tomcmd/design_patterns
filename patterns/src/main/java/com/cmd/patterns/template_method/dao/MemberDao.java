@@ -13,6 +13,8 @@ import java.util.List;
  * @create: 2018/11/8 2:44 PM
  */
 public class MemberDao {
+
+    //为什么不继承，主要是为了解耦
     private JdbcTemplate jdbcTemplate = new JdbcTemplate(null);
 
     public List<?> query() {
